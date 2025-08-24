@@ -16,7 +16,7 @@ const LoginUser = ({ role }) => {
       localStorage.setItem('authToken', data.token);
       localStorage.setItem('userRole', data.role);
       const user = data.role;
-     if(user=== 'admin'){
+     if(user === 'admin'){
        alert(`InValid User`);
        navigate('/');
      }
